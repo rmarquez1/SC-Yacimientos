@@ -1,0 +1,14 @@
+<html>
+	<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	</head>
+		<body BGCOLOR=CCEEFF>
+
+<div align="bottom" style="width:30%;height: 80%"
+<div style="float:bottom;width:80%;float:right;width:70%;">
+<button type="button" onclick= "window.open('/static/ayudas y glosarios/indicacionesYac.html','name','height=500,width=500,scrollbars=yes');return false;"style="font-size: larger; color: red; background-color: #F2DBDB; border: 3pt ridge lightgrey">?</button>
+</div>
+</div>
+	</body>
+
+</html>

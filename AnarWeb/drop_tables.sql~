@@ -1,4 +1,16 @@
 BEGIN;
+
+DROP TABLE "yacimientos_constitucionyacimiento";
+DROP TABLE "yacimientos_tipoexposicionyac";
+DROP TABLE "yacimientos_hidrologiayacimiento";
+DROP TABLE "yacimientos_faunayacimiento";
+DROP TABLE "yacimientos_florayacimiento";
+DROP TABLE "yacimientos_texturasuelo";
+DROP TABLE "yacimientos_yacimiento";
+DROP TABLE "yacimientos_municipio";
+DROP TABLE "yacimientos_estado";
+
+
 DROP TABLE "DatosGenerales_tipoyacimiento";
 DROP TABLE "DatosGenerales_fotografiayac";
 DROP TABLE "DatosGenerales_altitud";

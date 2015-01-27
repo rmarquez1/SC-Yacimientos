@@ -3,14 +3,7 @@
 from django import forms
 from haystack.forms import SearchForm
 
-from . import models
-from .DatosGenerales import models
-from .LaManifestacion import models
-from .Tecnicas import models
-from .Conservacion import models
-from .ManifestacionesAsociadas import models
-from .Apoyos import models
-from .Observaciones import models
+import AnarWeb.apps.yacimientos.models
 
 
 import dynamic
@@ -678,70 +671,6 @@ class ObtencionInfoForm(ModelForm) :
                 'blog': TextInput(attrs=regularTextField)      
         }
         
-class RepGrafPiedraForm(ModelForm) :
-    class Meta:
-        widgets = {                
-                'numPiezas': TextInput(attrs=shortTextField),
-                'instituto': TextInput(attrs=fullTextField),
-                'persona': TextInput(attrs=fullTextField),
-                'tipoReproduccion' : Select(attrs=regularSelect)
-        }
-
-class TratFotoPiedraForm(ModelForm) :
-    class Meta:
-        widgets = {                
-                'limpiezaCon': AutosizedTextarea(attrs=regularTextArea),
-                'rellenoSurcos': AutosizedTextarea(attrs=regularTextArea),
-                'tratamientoDigital': AutosizedTextarea(attrs=regularTextArea),
-                'programaVersion' : AutosizedTextarea(attrs=regularTextArea),
-                'otrosTratamientos' : AutosizedTextarea(attrs=regularTextArea),
-                
-        }
-
-### Formularios utilizados por el backend para piedra        
-
-class DimensionPiedraForm(ModelForm) :
-
-    class Meta:
-        widgets = {
-                'dimensiones': TextInput(attrs={'class': 'input-medium'}),            
-                'alto': TextInput(attrs={'class': 'input-small'}),
-                'largo': TextInput(attrs={'class': 'input-small'}),
-                'ancho': TextInput(attrs={'class': 'input-small'}),
-        }
-  
-class ManifestacionesAsociadasForm(ModelForm):
-
-    class Meta:
-        widgets = {
-                'hasMitos' : TextInput(attrs=regularTextField),
-                'hasOtros' : TextInput(attrs=regularTextField),
-        }
-
-class UbicacionCarasForm(ModelForm) :
-
-    class Meta:
-        widgets = {                
-                'bocaPrincipal':  TextInput(attrs=regularTextField),
-                'altura': TextInput(attrs=regularTextField),                 
-        }
+   
 
 
-class FigurasPorTipoForm (ModelForm):
-    class Meta:
-        widgets = {
-            'numero': TextInput(attrs={'class': 'input-medium'}),
-            'cantidad': TextInput(attrs={'class': 'input-small'}),
-            'tipoFigura': Select(attrs={'class': 'input-medium'}),
-            'numero': TextInput(attrs={'class': 'input-small'}),
-            'esCantidadInexacta' : TextInput(attrs={'class': 'input-small'}),
-            'descripcion' : AutosizedTextarea(attrs={'rows': 2})
-        }           
-    
-class CaraTrabajadaForm (ModelForm):
-    class Meta:
-        widgets = {
-            'numero': TextInput(attrs={'class': 'input-medium'}),
-            'orientacion': Select(attrs={'class': 'input-medium'})
-        }
-        

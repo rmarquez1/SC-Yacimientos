@@ -5,7 +5,7 @@ from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS as TCP
 
 import os
 
-PROJECT_PATH = os.path.join(os.path.dirname(__file__), '..')
+PROJECT_PATH = os.path.join(os.path.dirname(__file__),'..')
 ROOT_PATH = PROJECT_PATH
 
 
@@ -119,7 +119,7 @@ TEMPLATE_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
 
-    PROJECT_PATH + '/templates/'    
+    PROJECT_PATH + '/AnarWeb/templates/'    
 )
 
 INSTALLED_APPS = (
@@ -135,13 +135,13 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
     'AnarWeb.apps.yacimientos',
-    'AnarWeb.apps.yacimientos.DatosGenerales',
-    'AnarWeb.apps.yacimientos.LaManifestacion',
-    'AnarWeb.apps.yacimientos.Tecnicas',
-    'AnarWeb.apps.yacimientos.Conservacion',
-    'AnarWeb.apps.yacimientos.ManifestacionesAsociadas',
-    'AnarWeb.apps.yacimientos.Apoyos',
-    'AnarWeb.apps.yacimientos.Observaciones',
+    #'AnarWeb.apps.DatosGenerales',
+    #'AnarWeb.apps.LaManifestacion',
+    #'AnarWeb.apps.Tecnicas',
+    #'AnarWeb.apps.Conservacion',
+    #'AnarWeb.apps.ManifestacionesAsociadas',
+    #'AnarWeb.apps.Apoyos',
+    #'AnarWeb.apps.Observaciones',
     #'anarapp',
     #'south',
     #'joins',

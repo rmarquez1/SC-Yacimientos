@@ -1,0 +1,79 @@
+/** Modificaciones a los estilos del admin que son generados por suit */
+
+.form-horizontal .control-label, .form-horizontal .control-group .control-label {	
+	text-align: left; /*Se alinearon a la izquierda todas las etiquetas*/	
+	min-width:180px;  /*Se aumentaron 30px de ancho para las etiquetas */	
+}
+.level1 {
+	padding-left:15px !important;
+}
+.level2 {
+	padding-left:35px !important;
+}
+.level3 {
+	padding-left:55px !important;
+}
+.level4{
+	padding-left:75px !important;
+}
+
+/** Modificaciones realizadas para generar una única barra **/
+
+#yacimiento_form  .nav-tabs-suit li a, #piedra_form  .nav-tabs-suit li a  {	
+	max-width: 110px;
+	min-width: 60px;
+	height : 35px;
+	text-align : center;
+	padding: 8px 5px 7px;	
+
+}
+
+#yacimiento_form div.inline-related  b, #yacimiento_form  #CaracDeLaPintura-0 b, #yacimiento_form  #ColoresPositiva-0 b,
+#yacimiento_form  #NotasYacimiento-0 b {
+	display : none;
+}
+
+#yacimiento_form div.suit-tab-tecnicas b {
+	display : inline-block;
+}
+
+#ManifestacionesLitica-0 td.field-esLitica,
+#ManifestacionesCeramica-0 td.field-esCeramica,
+#ManifestacionesOseo-0 td.field-esOseo,
+#ManifestacionesConcha-0 td.field-esConcha,
+#ManifestacionesCarbon-0 td.field-esCarbon,
+#ManifestacionesMito-0 td.field-esMito,
+#ManifestacionesCementerio-0 td.field-esCementerio ,
+#ManifestacionesMonticulo-0 td.field-esMonticulo
+{
+	max-width : 20%;
+	width : 20%;
+}
+
+label[for=id_CaracSurcoPetroglifo-0-esBaseRedonda] {
+	background: url(base_redonda.png) no-repeat;
+	background-position: 120px;
+	background_size: cover;
+}
+label[for=id_CaracSurcoPetroglifo-0-esBaseAguda] {
+	background: url(base_aguda.png) no-repeat;
+	background-position: 120px;
+}
+label[for=id_CaracSurcoPetroglifo-0-esBajoRelieveLineal] {
+	background: url(bajo_relieve_lineal.png) no-repeat;
+	background-position: 120px;
+}
+label[for=id_CaracSurcoPetroglifo-0-esBajoRelievePlanar] {
+	background: url(bajo_relieve_planar.png) no-repeat;
+	background-position: 120px;
+}
+label[for=id_CaracSurcoPetroglifo-0-esAltoRelieveLineal] {
+	background: url(alto_relieve_lineal.png) no-repeat;
+	background-position: 120px;
+}
+label[for=id_CaracSurcoPetroglifo-0-esAltoRelievePlanar] {
+	background: url(alto_relieve_planar.png) no-repeat;
+	background-position: 120px;
+}
+
+

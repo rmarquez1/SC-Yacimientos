@@ -135,6 +135,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
     'AnarWeb.apps.yacimientos',
+    'AnarWeb.apps.Rocas',
     #'AnarWeb.apps.DatosGenerales',
     #'AnarWeb.apps.LaManifestacion',
     #'AnarWeb.apps.Tecnicas',
@@ -205,7 +206,7 @@ SUIT_CONFIG = {
     # 'MENU_OPEN_FIRST_CHILD': True, # Default True
     # 'MENU_EXCLUDE': ('auth.group',),
     """ 'MENU': (
-         {'app': 'anarapp', 'icon':'icon-globe', 'label': 'Software ANAR', 'models': ('yacimiento', 'piedra')},    
+         {'app': 'anarapp', 'icon':'icon-globe', 'label': 'Software ANAR', 'models': ('yacimiento', 'roca')},    
          {'app': 'auth', 'icon':'icon-lock', 'label': 'Usuarios', 'models': ('user', 'group')}               
      ),"""
 

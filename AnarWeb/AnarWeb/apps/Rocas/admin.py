@@ -188,7 +188,7 @@ class RocaAdmin (admin.ModelAdmin):
 
 
     inlines = [
-        Roca2Inline, FotografiaRocaInline, CaraTrabajadaInline, DimensionRocaInline, UbicacionCarasInline, FigurasPorTipoInline,
+        FotografiaRocaInline, Roca2Inline, CaraTrabajadaInline, DimensionRocaInline, UbicacionCarasInline, FigurasPorTipoInline,
         EsquemaPorCaraInline,ConexionFigurasInline, ManifestacionesInline, OtrosValRocaInline, TratFotoInline,
         FotoDigRocaInline,EscalaNatRocaInline, EscalaRedRocaInline, BibRocaInline, MatAudioVisualInline, VideoRocaInline,
         PeliculaRocaInline, PaginaWebRocaInline, MultimediaRocaInline, ObtInfoRocaInline,  ObservacionRocaInline,
@@ -203,8 +203,8 @@ class RocaAdmin (admin.ModelAdmin):
                       )	
     class Media:
         css = {
-            "all": ("anarapp/admin.css",)
+            "all": ("apps/Rocas/admin.css",)
         }
-        js = ("anarapp/admin.js",)
+        js = ("apps/Rocas/admin.js",)
 
 admin.site.register(Roca,RocaAdmin)

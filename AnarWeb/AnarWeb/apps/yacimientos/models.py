@@ -1495,7 +1495,7 @@ class OtrosValYac(OtrosValores):
 
 class Observaciones(models.Model):
 
-    texto = CharField('34.1. Observaciones',)
+    #texto = CharField('34.1. Observaciones',)
     
     def __unicode__(self):
         return '' # '# ' + str(self.id) 
@@ -1503,7 +1503,7 @@ class Observaciones(models.Model):
 class ObservacionesYac(Observaciones):
 
     yacimiento = models.ForeignKey(Yacimiento, related_name='ObservacionesYac')
-    
+    textoY = CharField('34.1. Observaciones',)
     abbr = 'oya'
     
     class Meta:
@@ -1515,13 +1515,14 @@ class ObservacionesYac(Observaciones):
 
 class LlenadoPor(models.Model):
 
-    nombre = CharField('35.1. Llenada por: ', blank = True)
-    fecha = models.CharField('35.2. Fecha', blank = True, null= True, max_length=100)
+    #nombre = CharField('35.1. Llenada por: ', blank = True)
+    #fecha = models.CharField('35.2. Fecha', blank = True, null= True, max_length=100)
     def __unicode__(self):
         return '' # '# ' + str(self.id) 
 
 class LlenadoYac(LlenadoPor):    
-
+    nombreY = CharField('35.1. Llenada por: ', blank = True)
+    fechaY = models.CharField('35.2. Fecha', blank = True, null= True, max_length=100)
     yacimiento = models.ForeignKey(Yacimiento, related_name='LlenadoYac')
     
     abbr = 'ypy'
@@ -1536,14 +1537,15 @@ class LlenadoYac(LlenadoPor):
 
 class SupervisadoPor(models.Model):
 
-    nombre = CharField('36.1. Supervisada por: ', blank = True)
-    fecha = models.CharField('36.2. Fecha', blank = True, null= True, max_length=100)
+    #nombre = CharField('36.1. Supervisada por: ', blank = True)
+    #fecha = models.CharField('36.2. Fecha', blank = True, null= True, max_length=100)
     
     def __unicode__(self):
         return '' # '# ' + str(self.id) 
 
 class SupervisadoYac(SupervisadoPor):
-    
+    nombreY = CharField('36.1. Supervisada por: ', blank = True)
+    fechaY = models.CharField('36.2. Fecha', blank = True, null= True, max_length=100)
     yacimiento = models.ForeignKey(Yacimiento, related_name='SupervisadoYac')
     
     abbr = 'spy'

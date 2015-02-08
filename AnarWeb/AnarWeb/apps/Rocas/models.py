@@ -3,7 +3,8 @@
 from django.db import models
 from AnarWeb.apps.yacimientos.models import  Yacimiento, CharField, Estado, Bibliografia,\
 											 MatAudioVisual, Pelicula, Video, LlenadoPor, SupervisadoPor, \
-											 PaginaWeb, Multimedia, ObtencionInfo, OtrosValores, Observaciones
+											 PaginaWeb, Multimedia, ObtencionInfo, OtrosValores, Observaciones,\
+                                             short_text
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.core.exceptions import ObjectDoesNotExist
 from smart_selects.db_fields import ChainedForeignKey
@@ -635,7 +636,7 @@ class OtrosValRoca(OtrosValores):
 class ObservacRoca(Observaciones):
 
     roca = models.ForeignKey(Roca, related_name='ObservacRoca')
-    textoP = CharField('16.1. Observaciones',)
+    textoR = CharField('16.1. Observaciones',)
     
     abbr = 'opi'
     
@@ -648,8 +649,8 @@ class ObservacRoca(Observaciones):
 class LlenadoRoca(LlenadoPor):    
 
     roca = models.ForeignKey(Roca, related_name='LlenadoRoca')
-    nombreP = CharField('17.1. Llenada por: ', blank = True)
-    fechaP = models.CharField('17.2. Fecha', blank = True, null= True, max_length=100)
+    nombreR = CharField('17.1. Llenada por: ', blank = True)
+    fechaR = models.CharField('17.2. Fecha', blank = True, null= True, max_length=100)
     
     abbr = 'ypp'
     
@@ -662,8 +663,8 @@ class LlenadoRoca(LlenadoPor):
 class SupervisadoRoca(SupervisadoPor):
     
     roca = models.ForeignKey(Roca, related_name='SupervisadoRoca')
-    nombreP = CharField('18.1. Supervisada por: ', blank = True)
-    fechaP = models.CharField('18.2. Fecha', blank = True, null= True, max_length=100)
+    nombreR = CharField('18.1. Supervisada por: ', blank = True)
+    fechaR = models.CharField('18.2. Fecha', blank = True, null= True, max_length=100)
     
     abbr = 'spp'    
 

@@ -1,0 +1,47 @@
+<html>
+	<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Punto Datum</title>
+	</head>
+		<body BGCOLOR=CCEEFF>
+
+<div style="float:right;width:95%;">
+<img src="images/help.png">
+</div>
+<br><br>
+<b>9 -  DATUM GPS  </b><br>
+ (GPS = Sistema de Posicionamiento Global)
+<br><br>
+
+El <b>Datum Geodésico</b> es una representación matemática simplificada 
+del tamaño y la forma de la Tierra, y del origen y orientación
+del sistema de coordenadas que se adopte para realizar 
+el levantamiento de la superficie terrestre. 
+<br><br>
+<b>LA CANOA</b>
+<br>
+<b>WGS84</b>
+<br><br>
+Formato Provisional  Suramérica  1956  =  <b>LA  CANOA</b>.
+El <b>DATUM</b>  que se llama <b>LA CANOA</b> aparece en la leyenda 
+de los mapas impresos, y es válido hasta 1999. 
+<b>Ahora el formato DATUM de Venezuela</b> se llama <b>REGVEN</b>
+<br><br>
+Los mapas venezolanos ahora están en formato REGVEN.
+Si se van a graficar las coordenadas, debemos saber en qué formato
+ se tomó el DATUM.
+<br><br>
+Hay que emparejar las Coordenadas con el DATUM.
+<br><br>
+<b>WGS84:</b> Sistema Geodésico Mundial 1.984
+<br><br>
+<b>WGS84</b>  es el <b>DATUM UNIVERSAL.</b>
+<br><br>
+Los GPS trabajan con WGS84
+<br><br>
+<b>Nota:   Cuando se vaya a trabajar con GPS, 
+pedir el Formato de DATUM y las coordenadas.</b>
+		
+		</body> 
+
+</html>

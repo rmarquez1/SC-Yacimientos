@@ -1,0 +1,463 @@
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14] mod_wsgi (pid=1558): Exception occurred processing WSGI script '/home/server/SC-Yacimientos/AnarWeb/AnarWeb/django.wsgi'.
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14] Traceback (most recent call last):
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/wsgi.py", line 241, in __call__
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]     response = self.get_response(request)
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 179, in get_response
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]     response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 221, in handle_uncaught_exception
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]     return debug.technical_500_response(request, *exc_info)
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/views/debug.py", line 66, in technical_500_response
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]     html = reporter.get_traceback_html()
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/views/debug.py", line 287, in get_traceback_html
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]     return t.render(c)
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 140, in render
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]     return self._render(context)
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 134, in _render
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]     return self.nodelist.render(context)
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 823, in render
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]     bit = self.render_node(node, context)
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]     return node.render(context)
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 84, in render
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]     output = self.filter_expression.resolve(context)
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 599, in resolve
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]     new_obj = func(obj, *arg_vals)
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/template/defaultfilters.py", line 718, in date
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]     return format(value, arg)
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/dateformat.py", line 310, in format
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]     return df.format(format_string)
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/dateformat.py", line 33, in format
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]     pieces.append(force_unicode(getattr(self, piece)()))
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/dateformat.py", line 214, in r
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]     return self.format('D, j M Y H:i:s O')
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/dateformat.py", line 33, in format
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]     pieces.append(force_unicode(getattr(self, piece)()))
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/encoding.py", line 71, in force_unicode
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]     s = unicode(s)
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 121, in __unicode_cast
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]     return func(*self.__args, **self.__kw)
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/translation/__init__.py", line 86, in ugettext
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]     return _trans.ugettext(message)
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/translation/trans_real.py", line 278, in ugettext
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]     return do_translate(message, 'ugettext')
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/translation/trans_real.py", line 268, in do_translate
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]     _default = translation(settings.LANGUAGE_CODE)
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/translation/trans_real.py", line 183, in translation
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]     default_translation = _fetch(settings.LANGUAGE_CODE)
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/translation/trans_real.py", line 160, in _fetch
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]     app = import_module(appname)
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/importlib.py", line 35, in import_module
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14]     __import__(name)
+[Wed Feb 11 15:21:54 2015] [error] [client 190.76.88.14] ImportError: No module named AnarWeb.apps.Rocas
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14] mod_wsgi (pid=1558): Exception occurred processing WSGI script '/home/server/SC-Yacimientos/AnarWeb/AnarWeb/django.wsgi'.
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14] Traceback (most recent call last):
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/wsgi.py", line 241, in __call__
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]     response = self.get_response(request)
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 179, in get_response
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]     response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 221, in handle_uncaught_exception
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]     return debug.technical_500_response(request, *exc_info)
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/views/debug.py", line 66, in technical_500_response
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]     html = reporter.get_traceback_html()
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/views/debug.py", line 287, in get_traceback_html
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]     return t.render(c)
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 140, in render
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]     return self._render(context)
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 134, in _render
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]     return self.nodelist.render(context)
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 823, in render
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]     bit = self.render_node(node, context)
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]     return node.render(context)
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 84, in render
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]     output = self.filter_expression.resolve(context)
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 599, in resolve
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]     new_obj = func(obj, *arg_vals)
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/template/defaultfilters.py", line 718, in date
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]     return format(value, arg)
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/dateformat.py", line 310, in format
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]     return df.format(format_string)
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/dateformat.py", line 33, in format
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]     pieces.append(force_unicode(getattr(self, piece)()))
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/dateformat.py", line 214, in r
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]     return self.format('D, j M Y H:i:s O')
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/dateformat.py", line 33, in format
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]     pieces.append(force_unicode(getattr(self, piece)()))
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/encoding.py", line 71, in force_unicode
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]     s = unicode(s)
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 121, in __unicode_cast
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]     return func(*self.__args, **self.__kw)
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/translation/__init__.py", line 86, in ugettext
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]     return _trans.ugettext(message)
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/translation/trans_real.py", line 278, in ugettext
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]     return do_translate(message, 'ugettext')
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/translation/trans_real.py", line 268, in do_translate
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]     _default = translation(settings.LANGUAGE_CODE)
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/translation/trans_real.py", line 183, in translation
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]     default_translation = _fetch(settings.LANGUAGE_CODE)
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/translation/trans_real.py", line 160, in _fetch
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]     app = import_module(appname)
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/importlib.py", line 35, in import_module
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14]     __import__(name)
+[Wed Feb 11 15:21:59 2015] [error] [client 190.76.88.14] ImportError: No module named AnarWeb.apps.Rocas
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14] mod_wsgi (pid=1557): Exception occurred processing WSGI script '/home/server/SC-Yacimientos/AnarWeb/AnarWeb/django.wsgi'.
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14] Traceback (most recent call last):
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/wsgi.py", line 241, in __call__
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]     response = self.get_response(request)
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 179, in get_response
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]     response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 221, in handle_uncaught_exception
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]     return debug.technical_500_response(request, *exc_info)
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/views/debug.py", line 66, in technical_500_response
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]     html = reporter.get_traceback_html()
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/views/debug.py", line 287, in get_traceback_html
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]     return t.render(c)
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 140, in render
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]     return self._render(context)
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 134, in _render
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]     return self.nodelist.render(context)
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 823, in render
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]     bit = self.render_node(node, context)
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]     return node.render(context)
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 84, in render
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]     output = self.filter_expression.resolve(context)
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 599, in resolve
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]     new_obj = func(obj, *arg_vals)
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/template/defaultfilters.py", line 718, in date
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]     return format(value, arg)
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/dateformat.py", line 310, in format
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]     return df.format(format_string)
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/dateformat.py", line 33, in format
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]     pieces.append(force_unicode(getattr(self, piece)()))
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/dateformat.py", line 214, in r
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]     return self.format('D, j M Y H:i:s O')
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/dateformat.py", line 33, in format
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]     pieces.append(force_unicode(getattr(self, piece)()))
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/encoding.py", line 71, in force_unicode
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]     s = unicode(s)
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 121, in __unicode_cast
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]     return func(*self.__args, **self.__kw)
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/translation/__init__.py", line 86, in ugettext
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]     return _trans.ugettext(message)
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/translation/trans_real.py", line 278, in ugettext
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]     return do_translate(message, 'ugettext')
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/translation/trans_real.py", line 268, in do_translate
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]     _default = translation(settings.LANGUAGE_CODE)
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/translation/trans_real.py", line 183, in translation
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]     default_translation = _fetch(settings.LANGUAGE_CODE)
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/translation/trans_real.py", line 160, in _fetch
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]     app = import_module(appname)
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/importlib.py", line 35, in import_module
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14]     __import__(name)
+[Wed Feb 11 14:52:04 2015] [error] [client 190.76.88.14] ImportError: No module named AnarWeb.apps.Rocas
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14] mod_wsgi (pid=1749): Exception occurred processing WSGI script '/home/server/SC-Yacimientos/AnarWeb/AnarWeb/django.wsgi'.
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14] Traceback (most recent call last):
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/wsgi.py", line 241, in __call__
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]     response = self.get_response(request)
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 179, in get_response
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]     response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 221, in handle_uncaught_exception
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]     return debug.technical_500_response(request, *exc_info)
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/views/debug.py", line 66, in technical_500_response
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]     html = reporter.get_traceback_html()
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/views/debug.py", line 287, in get_traceback_html
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]     return t.render(c)
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 140, in render
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]     return self._render(context)
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 134, in _render
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]     return self.nodelist.render(context)
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 823, in render
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]     bit = self.render_node(node, context)
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]     return node.render(context)
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 84, in render
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]     output = self.filter_expression.resolve(context)
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 599, in resolve
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]     new_obj = func(obj, *arg_vals)
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/template/defaultfilters.py", line 718, in date
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]     return format(value, arg)
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/dateformat.py", line 310, in format
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]     return df.format(format_string)
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/dateformat.py", line 33, in format
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]     pieces.append(force_unicode(getattr(self, piece)()))
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/dateformat.py", line 214, in r
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]     return self.format('D, j M Y H:i:s O')
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/dateformat.py", line 33, in format
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]     pieces.append(force_unicode(getattr(self, piece)()))
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/encoding.py", line 71, in force_unicode
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]     s = unicode(s)
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 121, in __unicode_cast
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]     return func(*self.__args, **self.__kw)
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/translation/__init__.py", line 86, in ugettext
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]     return _trans.ugettext(message)
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/translation/trans_real.py", line 278, in ugettext
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]     return do_translate(message, 'ugettext')
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/translation/trans_real.py", line 268, in do_translate
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]     _default = translation(settings.LANGUAGE_CODE)
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/translation/trans_real.py", line 183, in translation
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]     default_translation = _fetch(settings.LANGUAGE_CODE)
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/translation/trans_real.py", line 160, in _fetch
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]     app = import_module(appname)
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]   File "/usr/local/lib/python2.7/dist-packages/django/utils/importlib.py", line 35, in import_module
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14]     __import__(name)
+[Wed Feb 11 14:57:45 2015] [error] [client 190.76.88.14] ImportError: No module named AnarWeb.apps.yacimientos
+[Wed Feb 11 15:09:59 2015] [error] [client 190.142.169.188] File does not exist: /home/server/SC-Yacimientos/AnarWeb/AnarWeb/public_html
+[Thu Feb 12 04:58:38 2015] [error] [client 209.166.45.62] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
+[Thu Feb 12 19:28:38 2015] [error] [client 68.67.91.217] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
+[Fri Feb 13 08:22:42 2015] [error] [client 188.138.17.205] File does not exist: /home/server/SC-Yacimientos/AnarWeb/AnarWeb/public_html
+[Fri Feb 13 16:56:00 2015] [error] [client 190.4.45.114] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
+[Sat Feb 14 01:46:52 2015] [error] [client 95.111.54.7] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
+[Sat Feb 14 16:59:50 2015] [error] [client 66.249.88.252] File does not exist: /home/server/SC-Yacimientos/AnarWeb/AnarWeb/public_html
+[Sat Feb 14 22:29:33 2015] [error] [client 188.138.17.205] File does not exist: /home/server/SC-Yacimientos/AnarWeb/AnarWeb/public_html
+[Sun Feb 15 01:20:42 2015] [error] [client 2.248.124.108] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
+[Sun Feb 15 04:32:01 2015] [error] [client 98.203.247.243] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
+[Sun Feb 15 17:11:07 2015] [error] [client 66.249.88.252] File does not exist: /home/server/SC-Yacimientos/AnarWeb/AnarWeb/public_html
+[Tue Feb 17 08:08:03 2015] [error] [client 66.249.88.252] File does not exist: /home/server/SC-Yacimientos/AnarWeb/AnarWeb/public_html
+[Thu Feb 19 00:38:06 2015] [error] [client 190.178.198.171] File does not exist: /home/server/SC-Yacimientos/AnarWeb/AnarWeb/public_html
+[Fri Feb 20 09:38:31 2015] [error] [client 50.66.53.111] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /
+[Sat Feb 21 00:22:42 2015] [error] [client 178.252.148.94] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
+[Sun Feb 22 19:21:47 2015] [error] [client 66.249.88.250] File does not exist: /home/server/SC-Yacimientos/AnarWeb/AnarWeb/public_html
+[Tue Feb 24 19:11:25 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:11:25 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:11:25 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:11:25 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:11:25 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:11:25 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/AnarWeb/public_html
+[Tue Feb 24 19:11:27 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:11:27 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:11:27 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:11:27 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:11:27 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:11:31 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:11:31 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:11:31 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:11:31 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:11:31 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:11:34 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:11:34 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:11:34 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:11:34 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:11:34 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:11:35 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:11:35 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:11:35 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:11:35 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:11:35 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:12:05 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:12:05 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:12:05 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:12:05 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:12:05 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:12:10 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:12:10 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:12:10 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:12:10 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:12:10 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:12:13 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:12:13 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:12:14 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:12:14 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:12:14 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:12:17 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:12:17 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:12:17 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:12:17 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:12:17 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:18:17 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:18:17 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:18:18 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:18:18 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:18:18 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:18:18 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/AnarWeb/public_html
+[Tue Feb 24 19:21:32 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:21:33 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:21:33 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:21:33 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:21:33 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:26:41 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:26:41 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:26:41 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:26:41 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:26:41 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:27:02 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/auth/group/
+[Tue Feb 24 19:27:03 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/auth/group/
+[Tue Feb 24 19:27:03 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/auth/group/
+[Tue Feb 24 19:27:03 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/auth/group/
+[Tue Feb 24 19:27:03 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/auth/group/
+[Tue Feb 24 19:27:03 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/auth/group/
+[Tue Feb 24 19:27:03 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/auth/group/
+[Tue Feb 24 19:27:04 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/auth/group/
+[Tue Feb 24 19:27:04 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/auth/group/
+[Tue Feb 24 19:27:04 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/auth/group/
+[Tue Feb 24 19:33:23 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/static/suit/css/suit.css
+[Tue Feb 24 19:33:23 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/static/suit/css/suit.css
+[Tue Feb 24 19:33:24 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/static/suit/css/suit.css
+[Tue Feb 24 19:33:24 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/static/suit/css/suit.css
+[Tue Feb 24 19:33:28 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/apps, referer: http://159.90.9.166/admin/Rocas/roca/
+[Tue Feb 24 19:33:28 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/Rocas/roca/
+[Tue Feb 24 19:33:28 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/Rocas/roca/
+[Tue Feb 24 19:33:29 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/Rocas/roca/
+[Tue Feb 24 19:33:29 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/Rocas/roca/
+[Tue Feb 24 19:33:29 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/Rocas/roca/
+[Tue Feb 24 19:33:29 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/apps, referer: http://159.90.9.166/admin/Rocas/roca/
+[Tue Feb 24 19:33:30 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/static/suit/css/suit.css
+[Tue Feb 24 19:33:30 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/static/suit/css/suit.css
+[Tue Feb 24 19:33:30 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/static/suit/css/suit.css
+[Tue Feb 24 19:33:30 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/static/suit/css/suit.css
+[Tue Feb 24 19:33:33 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/auth/group/
+[Tue Feb 24 19:33:33 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/auth/group/
+[Tue Feb 24 19:33:34 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/apps, referer: http://159.90.9.166/admin/Rocas/roca/
+[Tue Feb 24 19:33:38 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:33:39 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:33:39 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:33:39 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:33:39 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/
+[Tue Feb 24 19:34:43 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/apps, referer: http://159.90.9.166/admin/Rocas/roca/add/
+[Tue Feb 24 19:34:43 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/Rocas/roca/add/
+[Tue Feb 24 19:34:43 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/Rocas/roca/add/
+[Tue Feb 24 19:34:43 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/Rocas/roca/add/
+[Tue Feb 24 19:34:43 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/Rocas/roca/add/
+[Tue Feb 24 19:34:43 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/Rocas/roca/add/
+[Tue Feb 24 19:34:43 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/apps, referer: http://159.90.9.166/admin/Rocas/roca/add/
+[Tue Feb 24 19:34:43 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/Rocas/roca/add/
+[Tue Feb 24 19:34:43 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/Rocas/roca/add/
+[Tue Feb 24 19:34:43 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/Rocas/roca/add/
+[Tue Feb 24 19:34:43 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/Rocas/roca/add/
+[Tue Feb 24 19:34:43 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/static/suit/css/suit.css
+[Tue Feb 24 19:34:43 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/static/suit/css/suit.css
+[Tue Feb 24 19:34:43 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/static/suit/css/suit.css
+[Tue Feb 24 19:34:43 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/static/suit/css/suit.css
+[Tue Feb 24 19:35:12 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/apps, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 19:35:12 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 19:35:12 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 19:35:12 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 19:35:12 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 19:35:12 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 19:35:12 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/apps, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 19:35:13 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/static/suit/css/suit.css
+[Tue Feb 24 19:35:13 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/static/suit/css/suit.css
+[Tue Feb 24 19:35:13 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/static/suit/css/suit.css
+[Tue Feb 24 19:35:13 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/static/suit/css/suit.css
+[Tue Feb 24 19:35:20 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/apps, referer: http://159.90.9.166/admin/yacimientos/yacimiento/add/
+[Tue Feb 24 19:35:20 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/yacimientos/yacimiento/add/
+[Tue Feb 24 19:35:20 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/yacimientos/yacimiento/add/
+[Tue Feb 24 19:35:20 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/yacimientos/yacimiento/add/
+[Tue Feb 24 19:35:20 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/yacimientos/yacimiento/add/
+[Tue Feb 24 19:35:20 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/yacimientos/yacimiento/add/
+[Tue Feb 24 19:35:20 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/apps, referer: http://159.90.9.166/admin/yacimientos/yacimiento/add/
+[Tue Feb 24 19:35:20 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/yacimientos/yacimiento/add/
+[Tue Feb 24 19:35:20 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/yacimientos/yacimiento/add/
+[Tue Feb 24 19:35:20 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/static/suit/css/suit.css
+[Tue Feb 24 19:35:20 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/static/suit/css/suit.css
+[Tue Feb 24 19:35:21 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/static/suit/css/suit.css
+[Tue Feb 24 19:35:21 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/static/suit/css/suit.css
+[Tue Feb 24 19:46:34 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/static/suit/css/suit.css
+[Tue Feb 24 19:46:34 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/static/suit/css/suit.css
+[Tue Feb 24 19:46:37 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/Rocas/
+[Tue Feb 24 19:46:37 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/Rocas/
+[Tue Feb 24 19:46:38 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/Rocas/
+[Tue Feb 24 19:46:38 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/Rocas/
+[Tue Feb 24 19:46:38 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/Rocas/
+[Tue Feb 24 19:54:29 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/Rocas/roca/
+[Tue Feb 24 19:54:30 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/Rocas/roca/
+[Tue Feb 24 19:54:30 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/apps, referer: http://159.90.9.166/admin/Rocas/roca/
+[Tue Feb 24 19:54:30 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/Rocas/roca/
+[Tue Feb 24 19:54:30 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/Rocas/roca/
+[Tue Feb 24 19:54:30 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/Rocas/roca/
+[Tue Feb 24 19:54:31 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/Rocas/roca/
+[Tue Feb 24 19:54:31 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/Rocas/roca/
+[Tue Feb 24 19:54:32 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/Rocas/roca/
+[Tue Feb 24 19:54:32 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/Rocas/roca/
+[Tue Feb 24 19:54:32 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/apps, referer: http://159.90.9.166/admin/Rocas/roca/
+[Tue Feb 24 19:54:33 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/Rocas/roca/
+[Tue Feb 24 19:54:57 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/auth/user/
+[Tue Feb 24 19:54:57 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/auth/user/
+[Tue Feb 24 19:54:58 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/auth/user/
+[Tue Feb 24 19:54:58 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/auth/user/
+[Tue Feb 24 19:54:58 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/auth/user/
+[Tue Feb 24 19:54:58 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/auth/user/
+[Tue Feb 24 19:54:58 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/auth/user/
+[Tue Feb 24 19:54:59 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/auth/user/
+[Tue Feb 24 19:54:59 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/auth/user/
+[Tue Feb 24 19:55:00 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/auth/user/
+[Tue Feb 24 19:55:00 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/auth/user/
+[Tue Feb 24 19:55:10 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/sites/site/
+[Tue Feb 24 19:55:11 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/sites/site/
+[Tue Feb 24 19:55:12 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/sites/site/
+[Tue Feb 24 19:55:12 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/sites/site/
+[Tue Feb 24 19:55:12 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/sites/site/
+[Tue Feb 24 19:55:13 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/sites/site/
+[Tue Feb 24 19:55:15 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/sites/site/
+[Tue Feb 24 19:55:16 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/sites/site/
+[Tue Feb 24 19:55:16 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/sites/site/
+[Tue Feb 24 19:55:16 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/sites/site/
+[Tue Feb 24 19:55:26 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 19:55:26 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 19:55:27 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/apps, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 19:55:27 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 19:55:27 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 19:55:27 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 19:55:28 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 19:55:29 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 19:55:29 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 19:55:30 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 19:55:30 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/apps, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 19:55:31 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 20:19:04 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit/bootstrap, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 20:19:04 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/apps, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 20:19:04 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit/js, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 20:19:04 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit/bootstrap, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 20:19:04 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 20:19:05 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 20:19:05 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 20:19:05 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 20:19:05 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 20:19:05 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/apps, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 20:19:06 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit/js, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 20:25:11 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit/bootstrap, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 20:25:12 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit/js, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 20:25:12 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit/bootstrap, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 20:25:12 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 20:25:13 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 20:25:14 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 20:25:14 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 20:25:14 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 20:25:14 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit/js, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 20:31:03 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit/js/jquery-1.8.3.min.js, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 20:31:03 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit/bootstrap/js/bootstrap.min.js, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 20:31:05 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin/js, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 20:31:05 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin/js, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 20:31:05 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin/js, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 20:31:07 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin/js, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 20:31:07 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin/js, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 20:31:08 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit/js/suit.js, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 20:31:09 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit/bootstrap/img, referer: http://159.90.9.166/static/suit/bootstrap/css/bootstrap.min.css
+[Tue Feb 24 20:31:10 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit/bootstrap/img, referer: http://159.90.9.166/static/suit/bootstrap/css/bootstrap.min.css
+[Tue Feb 24 21:54:57 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin/js, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 21:54:57 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit/js/jquery-1.8.3.min.js, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 21:54:57 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit/bootstrap/js/bootstrap.min.js, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 21:54:58 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin/js, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 21:54:58 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin/js, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 21:54:58 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin/js, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 21:54:58 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/admin/js, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 21:54:59 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit/js/suit.js, referer: http://159.90.9.166/admin/yacimientos/yacimiento/
+[Tue Feb 24 21:54:59 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit/bootstrap/img, referer: http://159.90.9.166/static/suit/bootstrap/css/bootstrap.min.css
+[Tue Feb 24 21:54:59 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit/bootstrap/img, referer: http://159.90.9.166/static/suit/bootstrap/css/bootstrap.min.css
+[Tue Feb 24 22:17:13 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/apps, referer: http://159.90.9.166/admin/yacimientos/yacimiento/?
+[Tue Feb 24 22:17:14 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit/js, referer: http://159.90.9.166/admin/yacimientos/yacimiento/?
+[Tue Feb 24 22:17:14 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit/bootstrap, referer: http://159.90.9.166/admin/yacimientos/yacimiento/?
+[Tue Feb 24 22:17:14 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit/bootstrap, referer: http://159.90.9.166/admin/yacimientos/yacimiento/?
+[Tue Feb 24 22:17:18 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/apps, referer: http://159.90.9.166/admin/yacimientos/yacimiento/?
+[Tue Feb 24 22:17:18 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit/js, referer: http://159.90.9.166/admin/yacimientos/yacimiento/?
+[Tue Feb 24 22:17:20 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit/img, referer: http://159.90.9.166/static/suit/css/suit.css
+[Tue Feb 24 22:17:20 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit/img, referer: http://159.90.9.166/static/suit/css/suit.css
+[Tue Feb 24 22:17:20 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit/img, referer: http://159.90.9.166/static/suit/css/suit.css
+[Tue Feb 24 22:17:20 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit/img, referer: http://159.90.9.166/static/suit/css/suit.css
+[Tue Feb 24 22:20:40 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit/bootstrap/css/bootstrap.min.css, referer: http://159.90.9.166/admin/
+[Tue Feb 24 22:20:41 2015] [error] [client 190.76.88.14] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/suit/bootstrap/js, referer: http://159.90.9.166/admin/
+[Tue Feb 24 22:27:18 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/AnarWeb/public_html
+[Tue Feb 24 22:27:59 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/apps, referer: http://159.90.9.166/admin/Rocas/roca/
+[Tue Feb 24 22:28:01 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/apps, referer: http://159.90.9.166/admin/Rocas/roca/
+[Tue Feb 24 22:28:15 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/apps, referer: http://159.90.9.166/admin/Rocas/roca/add/
+[Tue Feb 24 22:28:15 2015] [error] [client 186.88.19.77] File does not exist: /home/server/SC-Yacimientos/AnarWeb/static/apps, referer: http://159.90.9.166/admin/Rocas/roca/add/

@@ -1,15 +1,14 @@
 {% extends "website-base.html" %}
 
-{% block pagetitle %}Pagina Principal{% endblock %}
-{% block title %}ANAR{% endblock %}
+
 {% block user %}
 Ruby de Valencia
 {% endblock %}
 
 {% block submenu %}
 <ul class="list-inline ">
-        <li class="active"><a href="{% url index %}">Inicio</a></li>
-    <li role="presentation" class="dropdown ">
+    <li ><a href="{% url index %}">Inicio</a></li>
+    <li role="presentation" class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#"  role="button" aria-expanded="false">Quienes somos</a>
         <ul class="dropdown-menu" role="menu">
             <li role="presentation"><a role="menuitem" tabindex="-1" href="{% url origenytrayectoria %}">Origen y Trayectoria</a></li>
@@ -18,7 +17,7 @@ Ruby de Valencia
             <li role="presentation"><a role="menuitem" tabindex="-1" href="{% url profesionalesadjuntos %}">Profesionales adjuntos</a></li>
         </ul>
     </li>
-    <li role="presentation" class="dropdown">
+    <li role="presentation" class="dropdown active">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#"  role="button" aria-expanded="false">Patrimonio Rupestre Venezolano</a>
         <ul class="dropdown-menu" role="menu">
             <li role="presentation"><a role="menuitem" tabindex="-1" href="{% url leydeproteccion %}">Ley de Protecci&oacute;n del Patrimonio</a></li>
@@ -52,11 +51,4 @@ Ruby de Valencia
     <li><a href="{% url contacto %}">Contacto</a></li>
 </ul>
 {% endblock %}
-
-{% block content %}
-<p>
-El ANAR -Archivo Nacional de Arte Rupestre- tiene como propósito fundamental el servir de Centro de Referencia y Servicio de Información para el conocimiento y protección de las Manifestaciones Rupestres en Venezuela, como parte de la conservación de la memoria histórica y documental de este patrimonio cultural arqueológico del país.
-</p>
-{% endblock %}
-
 

@@ -18,6 +18,9 @@ def quienessomosProyectosactuales(request):
 def quienessomosProfesionalesadjuntos(request):
 	return render(request, 'quienessomos/profesionalesadjuntos.html')
 
+def patrimoniorupestreNota(request):
+	return render(request, 'patrimoniorupestrevenezolano/nota.html')
+
 def patrimoniorupestreLeydeproteccion(request):
 	return render(request, 'patrimoniorupestrevenezolano/leydeproteccion.html')
 
@@ -47,6 +50,9 @@ def patrimoniorupestreGeoportal(request):
 
 def programadeeducacionLasmanifestacionesylaescuela(request):
 	return render(request, 'programadeeducacion/manifestacionesylaescuela.html')
+
+def programadeeducacionComunidadAcademica(request):
+	return render(request, 'programadeeducacion/comunidadacademica.html')
 
 def programadeeducacionConvenios(request):
 	return render(request, 'programadeeducacion/convenios.html')

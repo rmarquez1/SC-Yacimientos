@@ -130,13 +130,13 @@
 			}
 
 .footer {
-	height: 20px;
 	background-color: #A70D0D;
 	bottom: 0px;
 	position: fixed;
 	width: 100%;
 	color: white;
 	padding-top: 5px;
+	text-align: center;
 }
 
 /**********************************************
@@ -191,4 +191,16 @@
 	COLUMNAS DE TAMAÑO COMPLETA
 **********************************************/
 
-html, body { height: 100%; overflow: auto;}
+html, body { 
+	height: 100%; 
+	overflow: auto;
+}
+body {
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif !important;
+}
+
+.footer a {
+	color: white;
+	text-decoration: none;
+	font-size: 12px;
+}

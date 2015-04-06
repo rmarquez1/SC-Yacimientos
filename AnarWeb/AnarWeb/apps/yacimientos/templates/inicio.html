@@ -1,14 +1,15 @@
 {% extends "website-base.html" %}
-
-
+{% load staticfiles %}
+{% block pagetitle %}Pagina Principal{% endblock %}
+{% block title %}ANAR{% endblock %}
 {% block user %}
 Ruby de Valencia
 {% endblock %}
 
 {% block submenu %}
 <ul class="list-inline ">
-    <li ><a href="{% url index %}">Inicio</a></li>
-    <li role="presentation" class="dropdown">
+        <li class="active"><a href="{% url index %}">Inicio</a></li>
+    <li role="presentation" class="dropdown ">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#"  role="button" aria-expanded="false">Quienes somos</a>
         <ul class="dropdown-menu" role="menu">
             <li role="presentation"><a role="menuitem" tabindex="-1" href="{% url origenytrayectoria %}">Origen y Trayectoria</a></li>
@@ -17,7 +18,7 @@ Ruby de Valencia
             <li role="presentation"><a role="menuitem" tabindex="-1" href="{% url profesionalesadjuntos %}">Profesionales adjuntos</a></li>
         </ul>
     </li>
-    <li role="presentation" class="dropdown active">
+    <li role="presentation" class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#"  role="button" aria-expanded="false">Patrimonio Rupestre Venezolano</a>
         <ul class="dropdown-menu" role="menu">
             <li role="presentation"><a role="menuitem" tabindex="-1" href="{% url nota %}">Nota</a></li>
@@ -25,7 +26,7 @@ Ruby de Valencia
             <li role="presentation"><a style="color: purple;" role="menuitem" tabindex="-1" href="{% url pinturasrupestres %}">Pinturas Rupestres</a></li>
             <li role="presentation"><a style="color: orange;" role="menuitem" tabindex="-1" href="{% url geoglifo %}">Geoglifo</a></li>
             <li role="presentation"><a style="color: red;" role="menuitem" tabindex="-1" href="{% url petroglifo %}">Petroglifo</a></li>
-            <li role="presentation"><a style="color: grey;" role="menuitem" tabindex="-1" href="{% url amoladores %}">Amoladores</a></li>
+            <li role="presentation"><a style="color: brown;" role="menuitem" tabindex="-1" href="{% url amoladores %}">Amoladores</a></li>
             <li role="presentation"><a style="color: darkgreen;" role="menuitem" tabindex="-1" href="{% url monumentosmegaliticos %}">Monumentos Megal&iacute;ticos</a></li>
             <li role="presentation"><a style="color: darkorange;" role="menuitem" tabindex="-1" href="{% url micropetroglifos %}">Micropetroglifos</a></li>
             <li role="presentation"><a style="color: #337ab7;" role="menuitem" tabindex="-1" href="{% url piedrasycerrosmiticos %}">Piedras y Cerros M&iacute;ticos Naturales</a></li>
@@ -53,4 +54,44 @@ Ruby de Valencia
     <li><a href="{% url contacto %}">Contacto</a></li>
 </ul>
 {% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-sm-3">
+    <img src="{% static "images/inicio/1.png" %}" />
+    </div>
+    <div class="col-sm-3">
+    <img src="{% static "images/inicio/2.gif" %}"  />
+    </div>
+    <div class="col-sm-3">
+    <img src="{% static "images/inicio/3.gif" %}"  />
+    </div>
+    <div class="col-sm-3">
+    <img src="{% static "images/inicio/4.gif" %}"  />
+    </div>
+</div>
+<br>
+<p>
+El ANAR -Archivo Nacional de Arte Rupestre- tiene como propósito fundamental el servir de Centro de Referencia y Servicio de Información para el conocimiento y protección de las Manifestaciones Rupestres en Venezuela, como parte de la conservación de la memoria histórica y documental de este patrimonio cultural arqueológico del país.
+</p>
+<div class="row">
+    <div class="col-sm-3">
+    <img src="{% static "images/inicio/FUNDABITAT.gif"  %}"  />
+    </div>
+    <div class="col-sm-2">
+    <img src="{% static "images/inicio/IFRAO.gif" %}"  />
+    </div>
+    <div class="col-sm-2">
+    <img src="{% static "images/inicio/tamayop.gif" %}"  />
+    </div>
+    <div class="col-sm-2">
+    <img src="{% static "images/inicio/ucvg.gif" %}"  />
+    </div>
+    <div class="col-sm-3">
+    <img src="{% static "images/inicio/USB.png" %}" />
+    </div>
+</div>
+<br>
+{% endblock %}
+
 

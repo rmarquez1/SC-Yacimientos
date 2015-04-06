@@ -32,6 +32,12 @@
     					
     			</div>
     		</div>
+            <!-- SUBMENU -->
+                        <div class="row">
+                            <div class="col-xs-12 sub-menu">
+                                    {% block submenu %}{% endblock %}
+                            </div>
+                        </div>
     		<!-- MAIN -->
     		<div class="row main" style="height: 80%;">    			
     			<div class="row-same-height" style="height: 100%;">
@@ -46,12 +52,7 @@
 	    			</div>
 	    			<!-- MAIN CONTENT -->
 	    			<div class="col-xs-10 col-xs-height col-top main-content">
-	    				<!-- SUBMENU -->
-	    				<div class="row">
-	    					<div class="col-xs-12 sub-menu">
-									{% block submenu %}{% endblock %}
-	    					</div>
-	    				</div>
+	    				
 	    				<!-- CONTENT -->
 	    				<div class="row">
 	    					<div class="col-xs-12 content">

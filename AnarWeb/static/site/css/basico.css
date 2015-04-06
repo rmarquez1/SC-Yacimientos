@@ -4,6 +4,10 @@
 	PALETTE:
 		FOOTER #D7D7D7 
 */
+@font-face {
+    font-family: epistolar;
+    src: url(../fonts/epistolar.ttf);
+}
 
 .topbar {
 	padding: 10px 0px;
@@ -28,7 +32,7 @@
 }
 
 	div.main-menu {
-		background-color: #A70D0D;
+		background-color: #000000;
 		color: white;
 		padding: 60px 0px 0px 3%;
 	}
@@ -40,10 +44,14 @@
 			margin-bottom: 15px;
 			padding: 4px 0px 4px 8px;
 			font-size: 17px;
+			background-color: orange;
+height: 80px;
+text-align: center;
+vertical-align: middle;
 		}
 
 		ul.main-menu > li.active {
-			background-color: #F2F2F2;
+			background-color: #A70D0D;
 			color: black;
 		}
 
@@ -60,22 +68,17 @@
 				color: white;
 			}
 
-			ul.main-menu > li.active > a {
-				color: black;
-			}
-
 			ul.main-menu > li:hover > a {
 				color: white;
 			}
 
 	.main-content {
-		background-color: #F2F2F2;	
+		background-color: #000000;	
 		height: 100%;
 	}
 
 		div.sub-menu {
-			background-color: #F2F2F2;
-			border: solid 1px #DFDFDF;
+			background-color: #000000;
 			width: 100%;
 			height: 60px;
 		}
@@ -93,10 +96,11 @@
 				height: 100%;
 				line-height: 60px;
 				margin: 0px 5px;
+				background-color: orange;
 			}
 
 			div.sub-menu > ul > li.active {
-				border-bottom: solid #C63B3B 5px;
+				background-color: #C63B3B;
 			}
 
 			div.sub-menu > ul > li:hover {
@@ -108,7 +112,7 @@
 				vertical-align: middle;
 				text-align: center;	
 				text-decoration: none;
-				color: black;
+				color: white;
 			}
 
 		.content {
@@ -186,6 +190,9 @@
     vertical-align:bottom;
 }
 
+.dropdown-menu {
+	background-color: #A70D0D;
+}
 
 /*********************************************
 	COLUMNAS DE TAMAÑO COMPLETA
@@ -203,4 +210,12 @@ body {
 	color: white;
 	text-decoration: none;
 	font-size: 12px;
+}
+
+.dropdown-menu>li>a {
+	color: white;
+}
+
+.contact-icon {
+	height: 20px;
 }

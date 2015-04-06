@@ -4,7 +4,8 @@ from AnarWeb.apps.yacimientos import views
 
 urlpatterns = patterns('',
     # ex: /polls/
-    url(r'^$', views.index, name='index'),
+    url(r'^$', views.index, name='inicio'),
+    url(r'inicio', views.inicio, name='index'),
     url(r'quienessomos/origen', views.quienessomosOrigenytrayectoria, name='origenytrayectoria'),
     url(r'quienessomos/areas', views.quienessomosAreasdeespecializacion, name='areasdeespecializacion'),
     url(r'quienessomos/proyectos', views.quienessomosProyectosactuales, name='proyectosactuales'),

@@ -1,4 +1,5 @@
 {% extends "website-base.html" %}
+{% load staticfiles %}
 
 {% block pagetitle %}Contacto{% endblock %}
 {% block title %}Contacto{% endblock %}
@@ -56,19 +57,30 @@ Ruby de Valencia
 {% endblock %}
 
 {% block content %}
+<div class="col-sm-9">
+<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1961.6014500863491!2d-66.90727746815455!3d10.484665401287971!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sve!4v1428279279706" width="600" height="450" frameborder="0" style="border:0"></iframe>
+</div>
+<div class="col-sm-3">
 <p>
-El <b>ANAR</b> ofrece sus servicios de consultas personales y consulta directa en sus archivos, previa cita confirmada. 
+<img src="{% static "images/contacto/direccion.png" %}" class="contact-icon"><b>ANAR</b><br>
+Av Nueva Granada <br>
+Edf TAMAYO & Cía, Piso 1<br>
+Los Rosales<br>
+Caracas, Venezuela<br>
 </p>
 <p>
-<b>Dirección:</b> 6ª Avenida entre 5ª y 6ª transversal, Quinta María de los Feos. Altamira, Caracas. Venezuela. 
-</p>
+ <img src="{% static "images/contacto/telefono.png" %}" class="contact-icon">58 - 212- 668.12.20
 <p>
-<b>Tel:</b> 58 (212) 263.03.38 
-<b>Fax:</b> 58 (212) 267.79.26 
 </p>
+<img src="{% static "images/contacto/email.png" %}" class="contact-icon">anarvenezuela@gmail.com
 <p>
-<b>Correo electrónico:</b> <a href="mailto:anarvenezuela@yahoo.com">anarvenezuela@yahoo.com</a>, <a href="mailto:anar@anar.org.ve">anar@anar.org.ve</a>
 </p>
+<img src="{% static "images/contacto/email.png" %}" class="contact-icon">anarvenezuela@yahoo.com
+<p>
+</p>
+<img src="{% static "images/contacto/facebook.png" %}" class="contact-icon">anar@anar.org.ve
+</p>
+</div>
 {% endblock %}
 
 
